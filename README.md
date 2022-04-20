@@ -1,6 +1,6 @@
-*Algoritmos y Estructuras de Datos*\n
-*K 1253*\n
-*2022*\n
-*Legajo: 173.123.3*\n
-*Sun*\n
+*Algoritmos y Estructuras de Datos*>
+*K 1253*>
+*2022*>
+*Legajo: 173.123.3*>
+*Sun*>
 *Leandro*
