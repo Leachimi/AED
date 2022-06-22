@@ -7,10 +7,11 @@
 //Prototipo
 double Celsius(double x);
 bool areNear(double x, double y , double = 0.01);
+double modulo(double x);
 
 int main() {
     //Prueba Celsius
-    assert(0 == Celsius(32));
+    //assert(0 == Celsius(32));
     assert(10 == Celsius(50.0));
     //std :: cout << Celsius(50.0);
     //Prueba areNear
@@ -19,9 +20,17 @@ int main() {
 }
 //Definiciones
 double Celsius(double x) {
+    //return 10.0;
     return (5.0/9.0)*(x - 32.0);
 }
 
 bool areNear(double x, double y , double z) {
-    return (y - z) <= x and x <= (y + z);
+    return (y - modulo(z)) <= x and x <= (y + modulo(z));
+}
+double modulo(double x) {
+    if(x >= 0)
+    {
+        return x;
+    }
+    return -x;    
 }
