@@ -11,8 +11,9 @@ double modulo(double x);
 
 int main() {
     //Prueba Celsius
-    assert(0 == Celsius(32.0));
-    assert(5.0 == Celsius(41.0));
+    assert(0 == Celsius(32));
+    assert(5 == Celsius(41));
+    assert(9 < Celsius(50));
     //Prueba areNear
     assert(areNear(0.9, 1.0, 0.1));
     assert(areNear(45.99 ,46.0));
@@ -23,7 +24,7 @@ int main() {
 //Definiciones
 double Celsius(double x) {
     
-    return (5.0/9.0)*(x - 32.0);
+    return (x - 32.0)*5.0/9.0;
 }
 
 bool areNear(double x, double y , double z) {
